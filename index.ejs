@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Form</title>
+    <link rel="stylesheet" href="public/form.css">
+    <style>
+      @media screen and (min-width: 480px) {
+    .newrow {
+      width: 100;
+    }
+      }
+      @media screen and (min-width: 480px){
+      form{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left:40px;
+        width:900px;
+        margin-top:70px;
+        margin-left:200px;
+        margin-right:0px;
+        background-color: black;
+    }
+      }
+      @media screen and (min-width: 480px){
+    .form-control{
+    width:300px;
+    background-color:black;
+    border-bottom: grey;
+    }
+      }
+      @media screen and (min-width: 480px){
+    .sec{
+      margin-left:500px;
+      margin-top:-340px;
+    }
+      }
+      @media screen and (min-width: 480px){
+    label{
+      color:white;
+    }
+      }
+      @media screen and (min-width: 480px){
+    button{
+      margin-left: 370px;
+    }
+      }
+      @media screen and (min-width: 480px){
+    p{
+      margin-left:290px;
+      color:white;
+      font-size: larger;
+      font-weight: bolder;
+    }  
+      }
+      @media screen and (min-width: 480px){
+      .logo{
+      width:90px;
+      margin-top:-80px;
+      margin-left:370px;
+      align-self: center;
+    }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="th">
+    <form id="form" method="POST" action="/" class="was-validated">
+      <img class="logo img-fluid" src="https://thumbs.dreamstime.com/thumblarge_4133/41331205.jpg"/>
+      <p>WELCOME TO TECHNOPHILIA</p>
+      <div class="newRow">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" name="name1" maxlength="20" class="form-control" id="Name" placeholder="Enter Name" required>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" required class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" pattern="^\d{10}$" required class="form-control" name="phone" id="phone" placeholder="Phone number">
+        </div>
+        <div class="form-group">
+            <label for="whatsapp">Whatsapp number</label>
+            <input type="tel" pattern="^\d{10}$" required class="form-control" name="what" id="whatsapp" placeholder="Whatsapp number">
+          </div>
+          <div class="sec">
+          <div class="form-group">
+            <label for="reference">Reference</label>
+            <input type="text" required class="form-control" name="ref" id="reference" placeholder="Enter Reference">
+          </div>
+          <div class="form-group">
+            <label for="quali">Higher Qualification</label>
+            <input type="text" required class="form-control" name="qual" id="quali" placeholder="Enter Qualification">
+          </div>
+          <div class="form-group">
+            <label>Applied for which Internship</label>
+            <br/>
+            <input type="radio" id="hr" name="position" value="HR" required="required">
+            <label for="hr">HR</label><br>
+            <input type="radio" id="market" name="position" value="Marketing" required="required">
+            <label for="market">Marketing</label><br>
+            <input type="radio" id="finance" name="position" value="Finance" required="required">
+            <label for="finance">Finance</label><br/>
+            <input type="radio" id="web" name="position" value="WebDev" required="required">
+            <label for="web">Web Development</label>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload CV</label>
+            <input type="file" required name="cv" class="form-control-file" id="exampleFormControlFile1"  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf">
+          </div>
+        <button type="submit" class="btn btn-danger" id="submit" value="submit">Submit</button>
+        
+      </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
